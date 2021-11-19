@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="bg-dark text-white">
+        <div class="container">
+            <h1>Design System</h1>
+
+            <section id="colors">
+                <h2><span>01</span> colors</h2>
+                <div class="flex">
+                    <div>
+                        <div
+                            class="bg-dark text-white"
+                            style="
+                                padding: 3rem 1rem 1rem;
+                                border: 1px solid white;
+                            "
+                        >
+                            #0b0d17
+                        </div>
+                        <p><span class="text-light">RGB</span> 11, 13, 23</p>
+                        <p><span class="text-light">HSL</span> 230, 35%, 7%</p>
+                    </div>
+
+                    <div>
+                        <div
+                            class="bg-light text-dark"
+                            style="
+                                padding: 3rem 1rem 1rem;
+                                border: 1px solid white;
+                            "
+                        >
+                            #0b0d17
+                        </div>
+                        <p><span class="text-light">RGB</span> 208, 214, 249</p>
+                        <p><span class="text-light">HSL</span> 231, 77%, 90%</p>
+                    </div>
+
+                    <div>
+                        <div
+                            class="bg-white text-dark"
+                            style="
+                                padding: 3rem 1rem 1rem;
+                                border: 1px solid white;
+                            "
+                        >
+                            #FFFFF
+                        </div>
+                        <p><span class="text-light">RGB</span> 255, 255, 255</p>
+                        <p><span class="text-light">HSL</span> 0, 0%, 100%</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flow" id="interactive-elements">
+                <!-- navigation -->
+                <div>
+                    <nav>
+                        <ul class="primary-navigation underline-indicators flex">
+                            <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span> Active</a></li>
+                            <li><a class="uppercase text-white letter-spacing-2" href="#"><span>02</span>Hover</a></li>
+                            <li><a class="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="flex">
+                    <div style="margin-top: 5rem;"">
+                        <!-- explore button -->
+                        <a
+                            href="#"
+                            class="
+                                large-button
+                                uppercase
+                                ff-serif
+                                fs-600
+                                text-dark
+                                bg-white
+                            "
+                            >Explore
+                        </a>
+                    </div>
+
+                    <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem;">
+                        <!-- Tabs -->
+                        <div class="tab-list underline-indicators flex">
+                            <button aria-selected="true" class="uppercase ff-sans-cond text-light letter-spacing-2 bg-dark">Moon</button>
+                            <button aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2 bg-dark">Mars</button>
+                            <button aria-selected="false" class="uppercase ff-sans-cond text-light letter-spacing-2 bg-dark">Europa</button>
+                        </div>
+                        
+                        <!-- Dots -->
+                        <div class="dot-indicators flex">
+                            <button aria-selected="true"><span class="sr-only">Slide Title</span></button>
+                            <button aria-selected="false"><span class="sr-only">Slide Title</span></button>
+                            <button aria-selected="false"><span class="sr-only">Slide Title</span></button>
+                        </div>
+                        
+                        <!-- Numbers -->
+                        <div class="number-indicators grid" style="--gap:4rem;">
+                            <button aria-selected="true">1</button>
+                            <button aria-selected="false">2</button>
+                            <button aria-selected="false">3</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
